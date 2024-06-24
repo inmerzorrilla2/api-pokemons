@@ -21,8 +21,9 @@ const PokeSelect = ({setTypeFilter}) => {
   }
 
   return (
+    <div className='poke-select'>
     <select onChange={handleChange} ref={valueSelect}>
-        <option value="">All pokemons</option>
+        <option value=""> <span className='all_pokemons'>All pokemons-clic hear</span> </option>
         {
             types?.results.map((type, i) => (
                 <option key={type.url} value={type.url}>{type.name}</option>
@@ -30,6 +31,7 @@ const PokeSelect = ({setTypeFilter}) => {
         }
       
     </select>
+    </div>
   )
 }
 

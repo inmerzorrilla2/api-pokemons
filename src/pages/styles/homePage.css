@@ -8,7 +8,7 @@ svg text {
 	animation: stroke 5s infinite alternate;
 	stroke-width: 2;
 	stroke: #FF2D0F;
-	font-size: 70px;
+	font-size: 50px;
 }
 @keyframes stroke {
 	0%   {
@@ -50,11 +50,14 @@ svg text {
 }
 
 .greeting {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
+    margin: 30px;
+    display: flex;          
+    flex-direction: column; 
+    align-items: center;   
+    gap: 20px;
+       
+  }
+  
 
 .greeting p {
     font-size: 20px;
@@ -67,18 +70,24 @@ svg text {
     height: 50px;
     border-radius: 10px;
     border: 2px solid #FF2D0F;
-    /* background-color: #ff2f0f63; */
     color: red;
     font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .greeting button {
-    width: 100px;
+    width: 70px;
     height: 50px;
     border-radius: 10px;
     border: none;
     background-color: #ff2f0f;
     color: #FFFFFF;
     font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    
+    
+
+    
 }
 

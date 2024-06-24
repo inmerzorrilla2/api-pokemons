@@ -9,7 +9,7 @@ const Pokeinfo = () => {
 
   const { id } = useParams()
 
-console.log(pokemon)
+// console.log(pokemon)
 
   useEffect(() => {
     getPokemon(`https://pokeapi.co/api/v2/pokemon/${id}`)

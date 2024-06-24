@@ -33,7 +33,7 @@ const handleSubmit = (event) => {
     <div className='greeting'>
     <p>To start, give me your name:</p>
     <form onSubmit={handleSubmit}>
-      <input ref={textInput} type="text" />
+      <input ref={textInput} type="text" /> 
       <button>Start</button>
     </form>
     </div>

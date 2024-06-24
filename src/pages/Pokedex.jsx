@@ -38,19 +38,19 @@ const Pokedex = () => {
   }
 
   return (
-    <div className="pokedex">
-      <h3 className="pokedex__wave">Pokedex</h3>
-    
-    
-    <div className="pokedex__filters">
+    <>
+    <h3 className="pokedex__wave">Pokedex</h3>
+    <div className="pokedex__container">
+    <div className='pokedex__search'>
     <form onSubmit={handleSearch}>
       <input ref={textInput} type="text" />
       <button>Search</button>
     </form>
+    </div>
     <PokeSelect
       setTypeFilter={setTypeFilter}
     />
-    </div>
+    
     <div className="pokedex__container">
       {
         pokemons?.results.filter(cbFilter).map((poke) => (
@@ -65,6 +65,7 @@ const Pokedex = () => {
     </div>
 
     </div>
+    </>
   )
 
 }
